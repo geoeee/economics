@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITLE — Economics Learning Project</title>
+  <!--
+    ⚠️ Path note: if this page is in a subdirectory (timeline/, concepts/, cross/),
+    change paths below to "../assets/css/style.css" and "../assets/js/nav.js"
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Hamburger (mobile) -->
+  <button class="hamburger" aria-label="Menu">☰</button>
+
+  <!-- Sidebar Overlay (mobile) -->
+  <div class="sidebar-overlay"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a href="index.html" class="site-title">Economics</a>
+      <div class="site-subtitle">History · Politics · Finance · Math · Psychology</div>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="sidebar-search-input" placeholder="Search pages... / 搜索">
+    </div>
+    <div class="search-no-results">No pages found / 未找到页面</div>
+    <nav class="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle">
+        <span class="icon">🌙</span>
+        <span class="label">Dark Mode</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- == PAGE HEADER ===================================== -->
+    <div class="page-header">
+      <div class="page-meta">
+        <span class="period-badge">PERIOD</span>
+        <span class="tag">tag1</span>
+        <span class="tag">tag2</span>
+      </div>
+      <h1>PAGE TITLE</h1>
+      <p>Brief description of this page / 页面简介。</p>
+    </div>
+
+    <!-- == ECONOMICS ======================================= -->
+    <section class="discipline-section ds-economics">
+      <div class="discipline-header">📈 Economics / 经济学</div>
+      <div class="discipline-body">
+        <p>Content here...</p>
+      </div>
+    </section>
+
+    <!-- == POLITICS ======================================== -->
+    <section class="discipline-section ds-politics">
+      <div class="discipline-header">⚡ Politics / 政治</div>
+      <div class="discipline-body">
+        <p>Content here...</p>
+      </div>
+    </section>
+
+    <!-- == HISTORY ========================================= -->
+    <section class="discipline-section ds-history">
+      <div class="discipline-header">📜 History / 历史</div>
+      <div class="discipline-body">
+        <p>Content here...</p>
+      </div>
+    </section>
+
+    <!-- == FINANCE ========================================= -->
+    <section class="discipline-section ds-finance">
+      <div class="discipline-header">💰 Finance / 金融</div>
+      <div class="discipline-body">
+        <p>Content here...</p>
+      </div>
+    </section>
+
+    <!-- == MATH ============================================ -->
+    <section class="discipline-section ds-math">
+      <div class="discipline-header">📐 Mathematics / 数学</div>
+      <div class="discipline-body">
+        <p>Content here...</p>
+      </div>
+    </section>
+
+    <!-- == PSYCHOLOGY ====================================== -->
+    <section class="discipline-section ds-psychology">
+      <div class="discipline-header">🧠 Psychology / 心理</div>
+      <div class="discipline-body">
+        <p>Content here...</p>
+      </div>
+    </section>
+
+    <!-- == CROSS REFERENCES ================================ -->
+    <h2>Cross References / 关联阅读</h2>
+    <ul>
+      <li><a href="#">Related concept page</a></li>
+      <li><a href="#">Related cross-discipline page</a></li>
+    </ul>
+
+    <!-- == PAGE NAVIGATION ================================= -->
+    <nav class="page-nav">
+      <a href="#" class="prev">PREV_PAGE</a>
+      <a href="#" class="next">NEXT_PAGE</a>
+    </nav>
+
+  </main>
+
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>
