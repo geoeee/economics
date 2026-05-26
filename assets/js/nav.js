@@ -69,12 +69,9 @@
   function getRootPrefix() {
     var scripts = document.getElementsByTagName("script");
     for (var i = 0; i < scripts.length; i++) {
-      var src = scripts[i].src || "";
-      var idx = src.indexOf("/assets/js/nav.js");
+      var src = scripts[i].getAttribute("src") || "";
+      var idx = src.indexOf("assets/js/nav.js");
       if (idx > -1) {
-        // Extract directory prefix before "assets/js/nav.js"
-        // e.g. "../assets/js/nav.js" → "../"
-        // e.g. "assets/js/nav.js" → ""
         return src.substring(0, idx);
       }
     }
