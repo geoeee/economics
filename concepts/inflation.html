@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inflation & Deflation · Economics Learning Project</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <button class="hamburger" aria-label="Menu">☰</button>
+  <div class="sidebar-overlay"></div>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Economics</a>
+      <div class="site-subtitle">History · Politics · Finance · Math · Psychology</div>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="sidebar-search-input" placeholder="Search pages... / 搜索">
+    </div>
+    <div class="search-no-results">No pages found / 未找到页面</div>
+    <nav class="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle">
+        <span class="icon">🌙</span>
+        <span class="label">Dark Mode</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <div class="page-meta">
+        <span class="tag">macroeconomics</span>
+        <span class="tag">core concept</span>
+      </div>
+      <h1>Inflation & Deflation / 通胀与通缩</h1>
+      <p>
+        The silent thief of purchasing power — and why central banks
+        fear falling prices more than rising ones.
+      </p>
+    </div>
+
+    <!-- Economics -->
+    <section class="discipline-section ds-economics">
+      <div class="discipline-header">📈 Economics / 经济学</div>
+      <div class="discipline-body">
+
+        <h3>What Is Inflation? / 什么是通胀？</h3>
+        <p>
+          <span class="term">Inflation</span> is a sustained increase in the general
+          price level of goods and services in an economy over time. It is measured
+          primarily through:
+        </p>
+        <ul>
+          <li><strong>CPI (Consumer Price Index)</strong>: basket of consumer goods and services</li>
+          <li><strong>PPI (Producer Price Index)</strong>: wholesale prices at the production level</li>
+          <li><strong>GDP Deflator</strong>: broadest measure, captures all domestically produced goods</li>
+          <li><strong>Core inflation</strong>: CPI excluding volatile food and energy prices</li>
+        </ul>
+
+        <h3>Causes / 成因</h3>
+        <div class="kv-list">
+          <div class="kv-item">
+            <span class="kv-key">Demand-pull / 需求拉动</span>
+            <span>Too much money chasing too few goods. Classic M2 growth above GDP growth.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Cost-push / 成本推动</span>
+            <span>Rising input costs (oil, wages, supply chain) push prices up.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Built-in / 惯性通胀</span>
+            <span>Inflation expectations become self-fulfilling; workers demand wage hikes → firms raise prices → loop.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Monetary / 货币性</span>
+            <span>Excessive money supply growth (Milton Friedman: "inflation is always and everywhere a monetary phenomenon").</span>
+          </div>
+        </div>
+
+        <h3>Deflation: The Real Monster / 通缩：真正的恶魔</h3>
+        <p>
+          <span class="term">Deflation</span> (falling prices) sounds appealing but is
+          economically devastating. It creates a <strong>deflationary spiral</strong>:
+          consumers delay purchases (expecting lower prices tomorrow) → demand collapses →
+          firms cut production and wages → less income → even less demand → repeat.
+          This was the dynamic of the <strong>Great Depression</strong> and
+          <strong>Japan's Lost Decades</strong>.
+        </p>
+
+        <div class="callout callout-important">
+          Central banks target ~2% inflation — not 0% — to maintain a buffer against 
+          deflation. At 0%, a shock could tip the economy into a deflationary spiral 
+          that monetary policy (already at zero rates) cannot easily stop.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Politics -->
+    <section class="discipline-section ds-politics">
+      <div class="discipline-header">⚡ Politics / 政治</div>
+      <div class="discipline-body">
+        <h3>Inflation as a Political Weapon / 通胀作为政治武器</h3>
+        <p>
+          Inflation redistributes wealth — from creditors to debtors, from savers to
+          borrowers. Governments with large debts benefit from moderate inflation
+          (it erodes the real value of debt). This creates an inherent conflict:
+          central banks want price stability; politicians want growth and manageable
+          debt ratios.
+        </p>
+        <h3>Inflation Targeting / 通胀目标制</h3>
+        <p>
+          Since New Zealand pioneered it in 1990, most major central banks now operate
+          under <span class="term">inflation targeting</span> — publicly committing to
+          ~2% inflation. This anchors expectations and provides accountability. Critics
+          argue it's arbitrary (why 2%?) and can blind central banks to asset bubbles
+          (the 2008 crisis built up under "low and stable" CPI).
+        </p>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="discipline-section ds-history">
+      <div class="discipline-header">📜 History / 历史</div>
+      <div class="discipline-body">
+        <table>
+          <tr><th>Event</th><th>Peak Inflation</th><th>Cause</th></tr>
+          <tr><td>Weimar Germany (1923)</td><td>~29,500% per month</td><td>War reparations, printing money</td></tr>
+          <tr><td>Hungary (1946)</td><td>~41.9 quadrillion % per month</td><td>Post-WWII destruction, printing money</td></tr>
+          <tr><td>US (1970s)</td><td>~14%</td><td>Oil shocks + loose monetary policy</td></tr>
+          <tr><td>Japan (1990s–2010s)</td><td>Persistent deflation</td><td>Asset bubble collapse, demographic decline</td></tr>
+          <tr><td>Venezuela (2016–)</td><td>~1,000,000%</td><td>Money printing, collapsing oil revenue</td></tr>
+          <tr><td>US/Europe (2021–2022)</td><td>~9% (US), ~10% (EU)</td><td>Post-pandemic demand + supply chain + energy shock</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Finance -->
+    <section class="discipline-section ds-finance">
+      <div class="discipline-header">💰 Finance / 金融</div>
+      <div class="discipline-body">
+        <p>
+          Inflation is the arch-enemy of fixed-income investors. A bond yielding 4% during
+          3% inflation has a <strong>real yield</strong> of only ~1%. This is why
+          <span class="term">inflation-linked bonds</span> (TIPS in the US, linkers in the UK)
+          adjust principal for CPI.
+        </p>
+        <p>
+          <span class="term">Real assets</span> (real estate, commodities, gold) are
+          traditional inflation hedges. Equities provide partial protection (companies can
+          raise prices), but high inflation compresses P/E multiples because future
+          earnings are discounted at higher rates.
+        </p>
+        <p>
+          The <span class="term">breakeven rate</span> — the difference between nominal
+          and inflation-linked bond yields — is the market's expectation of future inflation.
+          It's one of the most-watched indicators in global finance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Math -->
+    <section class="discipline-section ds-math">
+      <div class="discipline-header">📐 Mathematics / 数学</div>
+      <div class="discipline-body">
+        <h3>Inflation Rate / 通胀率</h3>
+        <pre><code>π = (CPI_t − CPI_{t−1}) / CPI_{t−1} × 100%</code></pre>
+
+        <h3>Fisher Equation / 费雪方程式</h3>
+        <pre><code>r = i − π
+
+r = real interest rate
+i = nominal interest rate
+π = inflation rate
+
+Example: loan at 5% with 3% inflation → real cost = 2%</code></pre>
+
+        <h3>Rule of 70 / 70法则</h3>
+        <pre><code>Years to double price level = 70 / inflation rate(%)
+
+At 2% inflation: prices double every ~35 years
+At 7% inflation: prices double every ~10 years</code></pre>
+
+        <h3>Quantity Equation / 货币数量方程</h3>
+        <pre><code>MV = PY → %ΔM + %ΔV ≈ %ΔP + %ΔY
+
+If V stable and Y grows at trend: excess M growth → inflation</code></pre>
+      </div>
+    </section>
+
+    <!-- Psychology -->
+    <section class="discipline-section ds-psychology">
+      <div class="discipline-header">🧠 Psychology / 心理</div>
+      <div class="discipline-body">
+        <ul>
+          <li><strong>Inflation expectations / 通胀预期</strong>: the most important driver of actual inflation. If people expect 5% inflation, they demand 5% wage increases and firms preemptively raise prices — expectations become self-fulfilling. Anchoring expectations is the central bank's primary psychological task.</li>
+          <li><strong>Salience bias / 显著性偏差</strong>: people notice price increases in frequently purchased items (groceries, gas) more than occasional purchases (appliances, cars), leading to <em>perceived</em> inflation diverging from measured inflation.</li>
+          <li><strong>Loss aversion / 损失厌恶</strong>: consumers experience rising prices as losses from a reference point, producing disproportionate anger. This explains why moderate inflation feels worse than equivalent nominal wage gains feel good.</li>
+          <li><strong>Zombie firms / 僵尸企业</strong>: low inflation environments allow unproductive firms to survive on cheap debt; moderate inflation accelerates "creative destruction" by exposing weak business models.</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2>Related / 关联阅读</h2>
+    <ul>
+      <li><a href="money-credit.html">Money & Credit / 货币与信用</a></li>
+      <li><a href="monetary-policy.html">Monetary Policy / 货币政策</a></li>
+      <li><a href="../timeline/07-world-wars.html">World Wars & Depression / 战争与萧条</a></li>
+      <li><a href="../timeline/09-neoliberal.html">Neoliberal Era / 新自由主义</a></li>
+    </ul>
+
+    <nav class="page-nav">
+      <a href="money-credit.html" class="prev">Money & Credit / 货币与信用</a>
+      <a href="market-structures.html" class="next">Market Structures / 市场结构</a>
+    </nav>
+
+  </main>
+
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

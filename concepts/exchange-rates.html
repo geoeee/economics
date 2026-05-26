@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rates · Economics Learning Project</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <button class="hamburger" aria-label="Menu">☰</button>
+  <div class="sidebar-overlay"></div>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Economics</a>
+      <div class="site-subtitle">History · Politics · Finance · Math · Psychology</div>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="sidebar-search-input" placeholder="Search pages... / 搜索">
+    </div>
+    <div class="search-no-results">No pages found / 未找到页面</div>
+    <nav class="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle">
+        <span class="icon">🌙</span>
+        <span class="label">Dark Mode</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <div class="page-meta">
+        <span class="tag">macroeconomics</span>
+        <span class="tag">core concept</span>
+      </div>
+      <h1>Exchange Rates / 汇率</h1>
+      <p>
+        The price of one currency in terms of another — and why this
+        seemingly simple price governs trade flows, capital movements,
+        and the limits of national economic policy.
+      </p>
+    </div>
+
+    <!-- Economics -->
+    <section class="discipline-section ds-economics">
+      <div class="discipline-header">📈 Economics / 经济学</div>
+      <div class="discipline-body">
+
+        <h3>Exchange Rate Regimes / 汇率制度</h3>
+        <table>
+          <tr><th>Regime</th><th>Description</th><th>Examples</th></tr>
+          <tr>
+            <td><strong>Floating</strong><br>浮动汇率</td>
+            <td>Market-determined; central bank may intervene occasionally</td>
+            <td>USD, EUR, JPY, GBP, AUD</td>
+          </tr>
+          <tr>
+            <td><strong>Fixed (Pegged)</strong><br>固定汇率</td>
+            <td>Tied to another currency or basket at a set rate</td>
+            <td>Saudi Riyal (to USD), Hong Kong Dollar (to USD)</td>
+          </tr>
+          <tr>
+            <td><strong>Managed Float</strong><br>管理浮动</td>
+            <td>Mostly market-driven but central bank actively steers</td>
+            <td>CNY, SGD, INR</td>
+          </tr>
+          <tr>
+            <td><strong>Currency Board</strong><br>货币局</td>
+            <td>Strict fixed peg; domestic currency 100% backed by foreign reserves</td>
+            <td>Hong Kong (until recently the purest example)</td>
+          </tr>
+        </table>
+
+        <h3>What Moves Exchange Rates? / 什么驱动汇率？</h3>
+        <ul>
+          <li><strong>Interest rate differentials</strong>: higher rates attract capital inflows → currency appreciates</li>
+          <li><strong>Inflation differentials</strong>: higher inflation erodes purchasing power → currency depreciates</li>
+          <li><strong>Current account balance</strong>: persistent deficits → depreciation pressure (exports become cheaper)</li>
+          <li><strong>Political stability / institutional quality</strong>: capital flees unstable countries</li>
+          <li><strong>Speculation</strong>: FX is the world's largest market (~$7.5T/day); speculation dominates short-term moves</li>
+        </ul>
+
+        <h3>The Impossible Trinity / 不可能三角</h3>
+        <div class="callout callout-important">
+          A country can have at most TWO of these three:
+          <br>① Free capital movement
+          <br>② Fixed exchange rate
+          <br>③ Independent monetary policy
+          <br><br>
+          Pick your poison: China chooses ②+③ (capital controls); Eurozone members choose ①+② (shared currency, no independent policy); US chooses ①+③ (floating rate).
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Politics -->
+    <section class="discipline-section ds-politics">
+      <div class="discipline-header">⚡ Politics / 政治</div>
+      <div class="discipline-body">
+        <h3>Currency Manipulation / 汇率操纵</h3>
+        <p>
+          Countries can deliberately weaken their currency to boost exports — a
+          <span class="term">beggar-thy-neighbor</span> policy. The US Treasury
+          regularly labels countries as "currency manipulators" (China, historically).
+          But in a world of floating rates, defining "manipulation" is inherently
+          political — every QE program also weakens a currency.
+        </p>
+
+        <h3>Reserve Currency Status / 储备货币地位</h3>
+        <p>
+          The US dollar is the world's dominant reserve currency (~59% of global
+          reserves). This grants the US <span class="term">exorbitant privilege</span> —
+          the ability to borrow in its own currency, run persistent deficits, and
+          exert financial power through dollar dominance (sanctions, SWIFT access).
+          The <span class="term">de-dollarization</span> debate — whether the yuan,
+          euro, or crypto can displace the dollar — is one of the defining geopolitical
+          questions of this era.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="discipline-section ds-history">
+      <div class="discipline-header">📜 History / 历史</div>
+      <div class="discipline-body">
+        <div class="timeline-visual">
+          <div class="timeline-item">
+            <div class="item-period">1870–1914</div>
+            <div class="item-title">Classical Gold Standard</div>
+            <div class="item-desc">Currencies fixed to gold at set rates. Automatic adjustment mechanism: trade deficits → gold outflow → money supply shrinks → prices fall → exports become competitive. Harsh but self-correcting.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1944–1971</div>
+            <div class="item-title">Bretton Woods System</div>
+            <div class="item-desc">Dollar pegged to gold ($35/oz); all other currencies pegged to dollar (adjustable). Created stability but US couldn't maintain gold convertibility as dollars piled up abroad (Triffin dilemma).</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1971–present</div>
+            <div class="item-title">Fiat Floating Era</div>
+            <div class="item-desc">Nixon closed the gold window. Most major currencies floated. Exchange rates became market-determined. Volatility increased; so did policy flexibility.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1992</div>
+            <div class="item-title">Black Wednesday</div>
+            <div class="item-desc">George Soros "broke the Bank of England" — shorting the pound forced the UK out of the ERM. Demonstrated that markets can overwhelm central banks defending a peg.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1997</div>
+            <div class="item-title">Asian Financial Crisis</div>
+            <div class="item-desc">Fixed-but-adjustable pegs collapsed under speculative attacks across Thailand, Indonesia, South Korea. Lesson: pegs are dangerous in a world of mobile capital.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finance -->
+    <section class="discipline-section ds-finance">
+      <div class="discipline-header">💰 Finance / 金融</div>
+      <div class="discipline-body">
+        <p>
+          FX is the world's most liquid market. <span class="term">Carry trade</span>:
+          borrow in low-rate currency (JPY), invest in high-rate currency (AUD, BRL) —
+          profit from the interest differential as long as exchange rates don't move
+          against you. When they do (sharp yen appreciation), the unwinding creates
+          violent moves (2008, 2024).
+        </p>
+        <p>
+          <span class="term">Purchasing Power Parity (PPP)</span>: in the long run,
+          exchange rates should adjust so that identical goods cost the same across
+          countries. The Big Mac Index (The Economist) is a popular informal PPP
+          measure. In reality, PPP holds poorly — deviations are large and persistent,
+          because not all goods are tradeable (haircuts, rent) and capital flows
+          dominate.
+        </p>
+      </div>
+    </section>
+
+    <!-- Math -->
+    <section class="discipline-section ds-math">
+      <div class="discipline-header">📐 Mathematics / 数学</div>
+      <div class="discipline-body">
+        <h3>Covered Interest Rate Parity / 抵补利率平价</h3>
+        <pre><code>F/S = (1 + i_domestic) / (1 + i_foreign)
+
+F = forward exchange rate
+S = spot exchange rate
+If this doesn't hold → risk-free arbitrage exists</code></pre>
+
+        <h3>Real Exchange Rate / 实际汇率</h3>
+        <pre><code>RER = E × (P_foreign / P_domestic)
+
+E = nominal exchange rate
+RER > 1 → domestic goods relatively expensive (overvalued)
+RER < 1 → domestic goods relatively cheap (undervalued)</code></pre>
+
+        <h3>Balance of Payments / 国际收支</h3>
+        <pre><code>Current Account + Capital Account + Financial Account = 0
+
+CA deficit = Capital + Financial Account surplus
+A country must borrow (or sell assets) to run a trade deficit</code></pre>
+      </div>
+    </section>
+
+    <!-- Psychology -->
+    <section class="discipline-section ds-psychology">
+      <div class="discipline-header">🧠 Psychology / 心理</div>
+      <div class="discipline-body">
+        <ul>
+          <li><strong>Home currency bias / 本币偏好</strong>: investors disproportionately hold domestic assets despite diversification benefits. This creates persistent demand for the domestic currency, contributing to exchange rate deviations from fundamentals.</li>
+          <li><strong>Exchange rate as national virility / 汇率即国威</strong>: a strong currency is psychologically perceived as a strong nation. Politicians celebrate appreciation and panic at depreciation — even though a weaker currency helps exporters. This is the <span class="term">exchange rate prestige illusion</span>.</li>
+          <li><strong>Round number effects / 整数效应</strong>: currency pairs tend to cluster at round numbers (EUR/USD at 1.00, USD/JPY at 150). These psychological levels become support/resistance — purely because traders believe others believe they matter.</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2>Related / 关联阅读</h2>
+    <ul>
+      <li><a href="trade-theory.html">Trade Theory / 贸易理论</a></li>
+      <li><a href="monetary-policy.html">Monetary Policy / 货币政策</a></li>
+      <li><a href="../timeline/08-bretton-woods.html">Bretton Woods / 战后秩序</a></li>
+    </ul>
+
+    <nav class="page-nav">
+      <a href="trade-theory.html" class="prev">Trade Theory / 贸易理论</a>
+      <a href="financial-crises.html" class="next">Financial Crises / 金融危机</a>
+    </nav>
+
+  </main>
+
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

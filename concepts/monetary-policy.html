@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monetary Policy · Economics Learning Project</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <button class="hamburger" aria-label="Menu">☰</button>
+  <div class="sidebar-overlay"></div>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Economics</a>
+      <div class="site-subtitle">History · Politics · Finance · Math · Psychology</div>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="sidebar-search-input" placeholder="Search pages... / 搜索">
+    </div>
+    <div class="search-no-results">No pages found / 未找到页面</div>
+    <nav class="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle">
+        <span class="icon">🌙</span>
+        <span class="label">Dark Mode</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <div class="page-meta">
+        <span class="tag">macroeconomics</span>
+        <span class="tag">core concept</span>
+      </div>
+      <h1>Monetary Policy / 货币政策</h1>
+      <p>
+        How central banks steer the economy using interest rates, money supply,
+        and increasingly — unconventional tools.
+      </p>
+    </div>
+
+    <!-- Economics -->
+    <section class="discipline-section ds-economics">
+      <div class="discipline-header">📈 Economics / 经济学</div>
+      <div class="discipline-body">
+
+        <h3>Conventional Tools / 常规工具</h3>
+        <div class="kv-list">
+          <div class="kv-item">
+            <span class="kv-key">Policy rate (基准利率)</span>
+            <span>Fed Funds Rate, ECB Refinancing Rate — the interest rate banks charge each other for overnight loans. The primary policy lever.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Open Market Operations</span>
+            <span>Central bank buys/sells government bonds to adjust bank reserves and short-term rates.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Reserve Requirements</span>
+            <span>Minimum reserves banks must hold. Rarely changed — now 0% in US, UK, and others.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Forward Guidance</span>
+            <span>Central bank communications about future policy path — shapes market expectations.</span>
+          </div>
+        </div>
+
+        <h3>Transmission Mechanism / 传导机制</h3>
+        <p>
+          Rate change → affects borrowing costs → changes consumption and investment →
+          shifts aggregate demand → affects output and inflation. This process takes
+          <strong>12–18 months</strong> (Milton Friedman: "long and variable lags").
+        </p>
+
+        <h3>Unconventional Tools / 非常规工具</h3>
+        <p>
+          When rates hit zero (the <span class="term">zero lower bound</span>),
+          central banks turn to:
+        </p>
+        <ul>
+          <li><strong>QE (Quantitative Easing) / 量化宽松</strong>: central bank buys long-term bonds (and sometimes equities) to lower long-term rates and inject liquidity. The Fed's balance sheet expanded from ~$900B (2007) to ~$9T (2022).</li>
+          <li><strong>Negative rates</strong>: ECB, Bank of Japan, Swiss National Bank all experimented with negative policy rates — charging banks to hold reserves — to stimulate lending.</li>
+          <li><strong>Yield Curve Control (YCC)</strong>: the central bank commits to buying whatever bonds are necessary to keep a specific yield. Japan pioneered this; Australia briefly used it.</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- Politics -->
+    <section class="discipline-section ds-politics">
+      <div class="discipline-header">⚡ Politics / 政治</div>
+      <div class="discipline-body">
+        <h3>The Independence Question / 独立性之问</h3>
+        <p>
+          Central banks sit in an awkward position: unelected technocrats wielding
+          enormous power over unemployment, inflation, and asset prices. The case
+          for independence: politicians would inflate the economy before elections.
+          The case against: democratic legitimacy — shouldn't the people's
+          representatives control something so consequential?
+        </p>
+
+        <h3>Dual vs Single Mandate / 双重 vs 单一目标</h3>
+        <ul>
+          <li><strong>Fed (dual mandate)</strong>: maximum employment + stable prices</li>
+          <li><strong>ECB (single mandate)</strong>: price stability. Employment secondary.</li>
+          <li><strong>PBoC (multiple)</strong>: prices, growth, employment, balance of payments, financial stability</li>
+        </ul>
+
+        <div class="callout callout-warn">
+          The Fed's dual mandate creates tension: lowering rates boosts employment 
+          but risks inflation; raising rates tames inflation but risks unemployment. 
+          There is no permanent solution — only a continuous balancing act.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="discipline-section ds-history">
+      <div class="discipline-header">📜 History / 历史</div>
+      <div class="discipline-body">
+        <div class="timeline-visual">
+          <div class="timeline-item">
+            <div class="item-period">1979–1982</div>
+            <div class="item-title">Volcker Shock</div>
+            <div class="item-desc">Fed Chair Paul Volcker raised rates to ~20% to crush inflation. Caused deep recession but broke the inflationary spiral. Foundation of modern central bank credibility.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1990s</div>
+            <div class="item-title">Inflation Targeting Era</div>
+            <div class="item-desc">NZ, Canada, UK, and others adopted explicit ~2% inflation targets. The "Great Moderation" — low inflation, steady growth — convinced many macroeconomics was solved. It wasn't.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">2008–2015</div>
+            <div class="item-title">QE Era</div>
+            <div class="item-desc">Fed, ECB, BoJ, BoE launched massive bond-buying programs. Trillions created. Inflation stayed low. Asset prices soared. Inequality widened.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">2022–2023</div>
+            <div class="item-title">Rate Hiking Cycle</div>
+            <div class="item-desc">Most aggressive global tightening in 40 years. Fed raised from 0% to 5.5% in 18 months. SVB and Credit Suisse collapsed — financial stability risks from rapid tightening.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finance -->
+    <section class="discipline-section ds-finance">
+      <div class="discipline-header">💰 Finance / 金融</div>
+      <div class="discipline-body">
+        <p>
+          The policy rate is the single most important price in financial markets —
+          it anchors the entire <span class="term">yield curve</span>. Lower rates boost
+          asset prices (stocks, bonds, real estate) through the discount rate effect.
+          This is the <span class="term">Fed put</span>: the market's expectation that
+          the central bank will ease policy to support asset prices.
+        </p>
+        <p>
+          <span class="term">Quantitative tightening (QT)</span>: the reverse of QE —
+          central bank shrinks its balance sheet by letting bonds mature or selling them.
+          Removes liquidity, puts upward pressure on long-term rates. Much less understood
+          than QE; the Fed had to abort QT in 2019 when repo markets seized up.
+        </p>
+      </div>
+    </section>
+
+    <!-- Math -->
+    <section class="discipline-section ds-math">
+      <div class="discipline-header">📐 Mathematics / 数学</div>
+      <div class="discipline-body">
+        <h3>Taylor Rule / 泰勒规则</h3>
+        <pre><code>i = r* + π + 0.5(π − π*) + 0.5(y − y*)
+
+i = policy rate
+r* = natural real rate
+π = current inflation
+π* = target inflation (~2%)
+y − y* = output gap
+
+Empirically describes Fed policy well until ~2008</code></pre>
+
+        <h3>Phillips Curve / 菲利普斯曲线</h3>
+        <pre><code>π = π_e − β(u − u*) + supply_shocks
+
+π = inflation
+π_e = expected inflation
+u = unemployment
+u* = NAIRU (natural rate)
+β = sensitivity
+
+Inverse relationship: lower unemployment → higher inflation</code></pre>
+      </div>
+    </section>
+
+    <!-- Psychology -->
+    <section class="discipline-section ds-psychology">
+      <div class="discipline-header">🧠 Psychology / 心理</div>
+      <div class="discipline-body">
+        <ul>
+          <li><strong>Central bank communication / 央行沟通</strong>: every word the Fed Chair speaks is parsed, modeled, and traded upon. A single adjective change in a statement can move markets by billions. This is "open mouth operations" — policy through psychology.</li>
+          <li><strong>Credibility / 公信力</strong>: the most valuable asset a central bank has. If markets believe the bank will do "whatever it takes" (Draghi, 2012), it may not need to do much. Credibility is earned over decades and lost in days.</li>
+          <li><strong>Inflation expectations anchoring / 通胀预期锚定</strong>: if people believe inflation will be 2%, they set wages and prices accordingly — and inflation stays at 2%. This self-fulfilling prophecy is why de-anchored expectations are so dangerous.</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2>Related / 关联阅读</h2>
+    <ul>
+      <li><a href="fiscal-policy.html">Fiscal Policy / 财政政策</a></li>
+      <li><a href="inflation.html">Inflation & Deflation / 通胀与通缩</a></li>
+      <li><a href="money-credit.html">Money & Credit / 货币与信用</a></li>
+      <li><a href="../timeline/09-neoliberal.html">Neoliberal Era / 新自由主义</a></li>
+    </ul>
+
+    <nav class="page-nav">
+      <a href="fiscal-policy.html" class="prev">Fiscal Policy / 财政政策</a>
+      <a href="trade-theory.html" class="next">Trade Theory / 贸易理论</a>
+    </nav>
+
+  </main>
+
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

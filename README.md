@@ -46,10 +46,12 @@ An AI-assisted learning project exploring **economics** through six lenses:
 3. Use the sidebar **search** to find specific topics
 4. Copy `_template.html` to create new pages
 
-## GitHub Pages
+## Deployment
 
-To deploy, push to `main` and enable GitHub Pages in repo settings
-(select the root directory as the source).
+Hosted on Cloudflare Pages:
+**[economics.zhangzhoujian92.workers.dev](https://economics.zhangzhoujian92.workers.dev)**
+
+Auto-deploys on push to `main`.
 
 ## License
 
