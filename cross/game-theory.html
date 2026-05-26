@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Theory · Economics Learning Project</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <button class="hamburger" aria-label="Menu">☰</button>
+  <div class="sidebar-overlay"></div>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Economics</a>
+      <div class="site-subtitle">History · Politics · Finance · Math · Psychology</div>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" id="sidebar-search-input" placeholder="Search pages... / 搜索">
+    </div>
+    <div class="search-no-results">No pages found / 未找到页面</div>
+    <nav class="sidebar-nav"></nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle">
+        <span class="icon">🌙</span>
+        <span class="label">Dark Mode</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="page-header">
+      <div class="page-meta">
+        <span class="period-badge">Math × Econ × Psychology</span>
+        <span class="tag">cross-discipline</span>
+      </div>
+      <h1>Game Theory / 博弈论</h1>
+      <p>
+        The mathematical study of strategic interaction — how rational actors
+        make decisions when outcomes depend on the choices of others.
+      </p>
+    </div>
+
+    <!-- Economics -->
+    <section class="discipline-section ds-economics">
+      <div class="discipline-header">📈 Economics / 经济学</div>
+      <div class="discipline-body">
+
+        <h3>Why Game Theory Matters for Economics</h3>
+        <p>
+          Classical economics treated firms as isolated optimizers facing a fixed market price.
+          <span class="term">Game theory</span> (developed by von Neumann, Morgenstern, and Nash)
+          revealed that in concentrated markets — oligopolies — firms are locked in
+          <strong>strategic interdependence</strong>. Your best move depends on what you
+          expect your competitor to do, which depends on what they expect you to do, ad infinitum.
+        </p>
+
+        <h3>Prisoner's Dilemma / 囚徒困境</h3>
+        <p>
+          The most famous game in economics: two prisoners, interrogated separately. If both
+          stay silent, both get 1 year. If one confesses and the other doesn't, the confessor
+          goes free and the other gets 10 years. If both confess, both get 5 years.
+          The <strong>dominant strategy</strong> for each individual is to confess —
+          yet mutual confession yields a worse outcome for both than mutual silence.
+        </p>
+        <div class="callout callout-info">
+          <strong>Economic parallel:</strong> Price wars. If both firms keep prices high, 
+          both earn healthy profits. But each has incentive to undercut the other. If both 
+          undercut, both earn less. If collusion were legal, they'd coordinate on high prices. 
+          Antitrust law exists precisely to prevent this.
+        </div>
+
+        <h3>Other Key Games / 其他关键博弈</h3>
+        <div class="kv-list">
+          <div class="kv-item">
+            <span class="kv-key">Chicken / 胆小鬼博弈</span>
+            <span>Two cars drive at each other; first to swerve "loses." Neither wants mutual collision (worst outcome). Modeling brinkmanship in nuclear deterrence, labor strikes.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Coordination Game</span>
+            <span>Both players prefer to coordinate on the same choice (driving side, tech standards). Multiple Nash equilibria. The problem isn't conflict — it's alignment.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Battle of the Sexes</span>
+            <span>Both prefer to be together, but each prefers a different activity. Models compromise situations where communication helps.</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-key">Ultimatum Game</span>
+            <span>Proposer splits $100; responder accepts or both get nothing. Rational solution: offer $0.01. Real-world: offers below ~$30 are rejected — people punish unfairness at their own cost.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Politics -->
+    <section class="discipline-section ds-politics">
+      <div class="discipline-header">⚡ Politics / 政治</div>
+      <div class="discipline-body">
+        <h3>Nuclear Deterrence / 核威慑</h3>
+        <p>
+          The Cold War was a giant game of Chicken expressed as
+          <span class="term">Mutually Assured Destruction (MAD)</span>. The Nash equilibrium:
+          both sides maintain second-strike capability, neither launches first. Thomas Schelling
+          won the Nobel Prize for applying game theory to conflict and deterrence — showing that
+          the <em>ability</em> to commit credibly to retaliation changes the game.
+        </p>
+        <h3>Collective Action Problem / 集体行动困境</h3>
+        <p>
+          Climate change is the largest game theory problem humanity faces: every nation benefits
+          from others cutting emissions but prefers not to bear the cost itself (free-riding).
+          Without enforcement mechanisms, the dominant strategy is to defect — precisely the
+          tragedy of the global commons.
+        </p>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="discipline-section ds-history">
+      <div class="discipline-header">📜 History / 历史</div>
+      <div class="discipline-body">
+        <div class="timeline-visual">
+          <div class="timeline-item">
+            <div class="item-period">1838</div>
+            <div class="item-title">Cournot Duopoly Model</div>
+            <div class="item-desc">Antoine Cournot modeled two firms competing on quantity — precursor to Nash equilibrium. Each firm's output is its best response to the other's.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1944</div>
+            <div class="item-title">Theory of Games and Economic Behavior</div>
+            <div class="item-desc">von Neumann & Morgenstern publish the foundational text. Introduces expected utility theory and zero-sum game analysis.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1950</div>
+            <div class="item-title">Nash Equilibrium</div>
+            <div class="item-desc">John Nash (age 21) proves every finite game has at least one equilibrium in mixed strategies. Transforms economics.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">1994</div>
+            <div class="item-title">Nobel Prize: Nash, Harsanyi, Selten</div>
+            <div class="item-desc">Recognition for game theory's transformation of economic analysis. Harsanyi (Bayesian games), Selten (subgame perfection).</div>
+          </div>
+          <div class="timeline-item">
+            <div class="item-period">2005</div>
+            <div class="item-title">Nobel Prize: Aumann & Schelling</div>
+            <div class="item-desc">Conflict and cooperation through game-theoretic analysis. Schelling's work on credible commitment changed military strategy.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finance -->
+    <section class="discipline-section ds-finance">
+      <div class="discipline-header">💰 Finance / 金融</div>
+      <div class="discipline-body">
+        <p>
+          Financial markets are giant multiplayer games. <span class="term">Keynesian beauty contest</span>:
+          investors don't pick what <em>they</em> think is best — they pick what they think
+          <em>others</em> will think is best. This creates self-fulfilling bubbles and crashes.
+        </p>
+        <p>
+          <span class="term">Auction theory</span> — a branch of mechanism design — designs
+          the rules for how goods are sold when buyers have private information about value.
+          From Treasury bond auctions to Google's ad auctions to 5G spectrum, auction design
+          determines prices, efficiency, and revenue. William Vickrey (1996 Nobel) and
+          Paul Milgrom & Robert Wilson (2020 Nobel) are the pioneers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Math -->
+    <section class="discipline-section ds-math">
+      <div class="discipline-header">📐 Mathematics / 数学</div>
+      <div class="discipline-body">
+        <h3>Nash Equilibrium / 纳什均衡</h3>
+        <pre><code>A strategy profile (s₁*, s₂*, ..., sₙ*) is a Nash equilibrium if:
+  uᵢ(sᵢ*, s₋ᵢ*) ≥ uᵢ(sᵢ, s₋ᵢ*)  for all i, for all sᵢ
+
+No player can improve by unilaterally changing strategy</code></pre>
+
+        <h3>Prisoner's Dilemma Payoff Matrix</h3>
+        <pre><code>           Cooperate    Defect
+Cooperate   (-1, -1)    (-10, 0)
+Defect      (0, -10)    (-5, -5)
+
+Defect dominates: -5 > -10 and 0 > -1
+But (-1,-1) Pareto-dominates (-5,-5)</code></pre>
+
+        <h3>Mixed Strategy / 混合策略</h3>
+        <pre><code>If no pure-strategy equilibrium exists, there is always
+a mixed-strategy Nash equilibrium where players randomize
+
+Payoff from strategy A = probability-weighted average of outcomes
+Set equal to solve for equilibrium probabilities</code></pre>
+
+        <h3>Expected Utility / 期望效用</h3>
+        <pre><code>EU = Σ pᵢ × u(xᵢ)
+
+pᵢ = probability of outcome i
+u(xᵢ) = utility from outcome i
+
+Risk aversion: u'' < 0 (diminishing marginal utility)</code></pre>
+      </div>
+    </section>
+
+    <!-- Psychology -->
+    <section class="discipline-section ds-psychology">
+      <div class="discipline-header">🧠 Psychology / 心理</div>
+      <div class="discipline-body">
+        <ul>
+          <li><strong>Trust and reputation / 信任与声誉</strong>: in repeated games, cooperation emerges even among self-interested players through <span class="term">tit-for-tat</span> strategies (Axelrod, 1984). "I'll cooperate if you did last round." This explains how trust evolves without a central authority — the foundation of all trade and markets.</li>
+          <li><strong>Bounded rationality / 有限理性</strong>: real humans don't compute Nash equilibria. Herbert Simon: we <em>satisfice</em> (seek satisfactory, not optimal, outcomes) due to cognitive limits. This is why simple heuristics often beat complex game-theoretic reasoning in real-world settings.</li>
+          <li><strong>Fairness preference / 公平偏好</strong>: the Ultimatum Game reveals that humans are not purely self-interested. We sacrifice our own gains to punish unfairness — an evolved capacity for norm enforcement that undergirds all cooperation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2>Related / 关联阅读</h2>
+    <ul>
+      <li><a href="../concepts/market-structures.html">Market Structures / 市场结构</a></li>
+      <li><a href="behavioral.html">Behavioral Economics / 行为经济学</a></li>
+      <li><a href="math-models.html">Essential Math Models / 核心数学模型</a></li>
+    </ul>
+
+    <nav class="page-nav">
+      <a href="../timeline/10-contemporary.html" class="prev">Contemporary / 当代</a>
+      <a href="behavioral.html" class="next">Behavioral Economics / 行为经济学</a>
+    </nav>
+
+  </main>
+
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>
