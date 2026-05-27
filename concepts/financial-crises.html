@@ -183,31 +183,37 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="现值与资产泡沫">Present Value and Asset Bubbles / 现值与资产泡沫</h3>
-        <pre><code>Rational Price = Σ(CF_t / (1+r)^t)  for t = 1→n
-
-CF_t = expected cash flow at time t
-r = discount rate
-
-A bubble exists when: Market Price ≫ Σ(CF_t / (1+r)^t)
-
-i.e. the price cannot be justified by reasonable expectations
-of future cash flows discounted at a reasonable rate</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        \text{Rational Price} &= \sum_{t=1}^{n} \frac{CF_t}{(1 + r)^t} \\[4pt]
+        CF_t &= \text{expected cash flow at time } t \\
+        r &= \text{discount rate} \\[4pt]
+        &\text{A bubble exists when: } \text{Market Price} \gg \sum_{t=1}^{n} \frac{CF_t}{(1 + r)^t} \\[4pt]
+        &\text{i.e. the price cannot be justified by reasonable expectations} \\
+        &\text{of future cash flows discounted at a reasonable rate}
+        \end{aligned}$$
+        </div>
 
         <h3 data-translate="杠杆与放大">Leverage and Amplification / 杠杆与放大</h3>
-        <pre><code>Simple leverage:  L = Assets / Equity
-
-With L = 10 (10:1 leverage):
-  10% asset rise → doubles your equity (gain 100%)
-  10% asset fall → wipes out your equity (loss 100%)
-
-Leverage amplifies both gains AND losses symmetrically</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        \text{Simple leverage: } L &= \frac{\text{Assets}}{\text{Equity}} \\[4pt]
+        \text{With } L &= 10 \text{ (10:1 leverage):} \\
+        10\% \text{ asset rise} &\rightarrow \text{ doubles your equity (gain 100\%)} \\
+        10\% \text{ asset fall} &\rightarrow \text{ wipes out your equity (loss 100\%)} \\[4pt]
+        &\text{Leverage amplifies both gains AND losses symmetrically}
+        \end{aligned}$$
+        </div>
 
         <h3 data-translate="在险价值">Value at Risk (VaR) / 在险价值</h3>
-        <pre><code>VaR(95%) = minimum loss in the worst 5% of scenarios
-
-Problem: VaR assumes normal distributions, ignores tail risk.
-In a crisis, correlation → 1 (all assets fall together).
-Models that assume diversification become catastrophically wrong.</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        \text{VaR}(95\%) &= \text{minimum loss in the worst 5\% of scenarios} \\[4pt]
+        &\text{Problem: VaR assumes normal distributions, ignores tail risk.} \\
+        &\text{In a crisis, correlation } \rightarrow 1 \text{ (all assets fall together).} \\
+        &\text{Models that assume diversification become catastrophically wrong.}
+        \end{aligned}$$
+        </div>
       </div>
     </section>
 
@@ -243,5 +249,18 @@ Models that assume diversification become catastrophically wrong.</code></pre>
 
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

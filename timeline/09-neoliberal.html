@@ -96,28 +96,27 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="弗里德曼的固定货币增长率规则">Friedman's k-Percent Rule / 弗里德曼的固定货币增长率</h3>
-        <pre><code>ΔM = k% annually (Friedman proposed 3–5%)
+        <div class="math-block">
+$$\Delta M = k\% \text{ annually (Friedman proposed }3\text{–}5\%)$$
 
-Rationale:
-  MV = PY
-  If V stable, Y grows ~3%, then ΔM = 3% → stable P
-  Avoids central bank discretion (which Friedman distrusted)
+$$\text{Rationale:}$$
+$$MV = PY$$
+$$\text{If } V \text{ stable, } Y \text{ grows} \sim 3\%\text{, then } \Delta M = 3\% \rightarrow \text{stable } P$$
+$$\text{Avoids central bank discretion (which Friedman distrusted)}$$
 
-Never fully adopted; replaced by inflation targeting
-by the 1990s. But the logic — rules beat discretion —
-remains influential</code></pre>
+$$\text{Never fully adopted; replaced by inflation targeting by the 1990s. But the logic — rules beat discretion — remains influential}$$
+</div>
 
         <h3 data-translate="有效市场假说">Efficient Market Hypothesis / 有效市场假说</h3>
-        <pre><code>P_t = E[P_t | all available information at t−1]
+        <div class="math-block">
+$$P_t = E[P_t \mid \text{all available information at } t-1]$$
 
-Prices reflect all available information.
-You cannot consistently beat the market.
-Bubbles are, by definition, impossible.
+$$\text{Prices reflect all available information.}$$
+$$\text{You cannot consistently beat the market.}$$
+$$\text{Bubbles are, by definition, impossible.}$$
 
-The 2008 crisis demonstrated that markets are
-not, in fact, always efficient. But the EMH remains
-the dominant framework in academic finance —
-with "behavioral" caveats added.</code></pre>
+$$\text{The 2008 crisis demonstrated that markets are not, in fact, always efficient. But the EMH remains the dominant framework in academic finance — with "behavioral" caveats added.}$$
+</div>
       </div>
     </section>
 
@@ -148,5 +147,18 @@ with "behavioral" caveats added.</code></pre>
   </main>
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

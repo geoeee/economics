@@ -455,6 +455,30 @@ img {
   border-radius: 3px;
 }
 
+/* --- MathJax / LaTeX rendered math --------------------------- */
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  margin: 18px 0;
+  padding: 14px 18px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  overflow-x: auto;
+  font-size: 0.95rem !important;
+}
+
+mjx-container[jax="CHTML"]:not([display="true"]) {
+  padding: 0 1px;
+}
+
+[data-theme="dark"] mjx-container[jax="CHTML"] {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] mjx-container[jax="CHTML"] svg {
+  color: var(--color-text) !important;
+}
+
 /* --- Cards -------------------------------------------------- */
 .card {
   background: var(--color-bg-secondary);

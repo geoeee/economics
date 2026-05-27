@@ -187,25 +187,34 @@
       <div class="discipline-body">
 
         <h3 data-translate="线性模型">Linear Model / 线性模型</h3>
-        <pre><code>Demand:  Qd = a − bP     (a: intercept, b: slope)
-Supply:  Qs = c + dP     (c: intercept, d: slope)
-
-Equilibrium:  Qd = Qs → P* = (a − c) / (b + d)</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        \text{Demand:}\quad Q_d &= a - bP &&\text{(a: intercept, b: slope)} \\
+        \text{Supply:}\quad Q_s &= c + dP &&\text{(c: intercept, d: slope)} \\[4pt]
+        \text{Equilibrium:}\quad Q_d &= Q_s \;\rightarrow\; P^* = \frac{a - c}{b + d}
+        \end{aligned}$$
+        </div>
 
         <h3 data-translate="弹性公式">Elasticity Formula / 弹性公式</h3>
-        <pre><code>Price Elasticity of Demand:
-  Ed = (% ΔQd) / (% ΔP) = (ΔQ/ΔP) × (P/Q)
-
-|Ed| > 1 → Elastic   (luxury goods)
-|Ed| < 1 → Inelastic (necessities)
-|Ed| = 1 → Unit elastic</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        &\text{Price Elasticity of Demand:} \\
+        E_d &= \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q} \\[4pt]
+        |E_d| > 1 \;&\rightarrow\; \text{Elastic (luxury goods)} \\
+        |E_d| < 1 \;&\rightarrow\; \text{Inelastic (necessities)} \\
+        |E_d| = 1 \;&\rightarrow\; \text{Unit elastic}
+        \end{aligned}$$
+        </div>
 
         <h3 data-translate="消费者与生产者剩余">Consumer & Producer Surplus / 消费者与生产者剩余</h3>
-        <pre><code>Consumer Surplus = ∫[0→Q*] D(Q)dQ − P* × Q*
-Producer Surplus = P* × Q* − ∫[0→Q*] S(Q)dQ
-
-Total Welfare = CS + PS
-Deadweight Loss = lost surplus from underproduction</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        \text{Consumer Surplus} &= \int_{0}^{Q^*} D(Q)\,dQ - P^* \times Q^* \\
+        \text{Producer Surplus} &= P^* \times Q^* - \int_{0}^{Q^*} S(Q)\,dQ \\[4pt]
+        \text{Total Welfare} &= CS + PS \\
+        \text{Deadweight Loss} &= \text{lost surplus from underproduction}
+        \end{aligned}$$
+        </div>
 
       </div>
     </section>
@@ -248,5 +257,18 @@ Deadweight Loss = lost surplus from underproduction</code></pre>
 
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

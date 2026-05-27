@@ -154,47 +154,58 @@
       <div class="discipline-body">
 
         <h3 data-translate="微积分：边际分析">Calculus: Marginal Analysis / 边际分析</h3>
-        <pre><code>Total Revenue: TR = P(Q) × Q
-Marginal Revenue: MR = d(TR)/dQ
-Profit max: MR = MC
-
-Elasticity: ε = (dQ/dP) × (P/Q)</code></pre>
+        <div class="math-block">
+$$\begin{aligned}
+\text{Total Revenue: } & TR = P(Q) \cdot Q \\
+\text{Marginal Revenue: } & MR = \frac{d(TR)}{dQ} \\
+\text{Profit max: } & MR = MC \\[4pt]
+\text{Elasticity: } & \varepsilon = \frac{dQ}{dP} \cdot \frac{P}{Q}
+\end{aligned}$$
+</div>
 
         <h3 data-translate="最优化：拉格朗日乘数">Optimization: Lagrange Multipliers / 拉格朗日乘数</h3>
-        <pre><code>Maximize utility u(x,y) subject to budget p_x·x + p_y·y ≤ M
-
-ℒ = u(x,y) − λ(p_x·x + p_y·y − M)
-
-∂ℒ/∂x = 0, ∂ℒ/∂y = 0 → MU_x/p_x = MU_y/p_y = λ
-
-λ = marginal utility of income (shadow price of the constraint)</code></pre>
+        <div class="math-block">
+$$\begin{aligned}
+\text{Maximize utility } & u(x,y) \text{ subject to budget } p_x \cdot x + p_y \cdot y \leq M \\[4pt]
+\mathcal{L} &= u(x,y) - \lambda(p_x \cdot x + p_y \cdot y - M) \\[4pt]
+\frac{\partial \mathcal{L}}{\partial x} = 0,\ \frac{\partial \mathcal{L}}{\partial y} = 0 &\rightarrow \frac{MU_x}{p_x} = \frac{MU_y}{p_y} = \lambda \\[4pt]
+\lambda &= \text{marginal utility of income (shadow price of the constraint)}
+\end{aligned}$$
+</div>
 
         <h3 data-translate="线性代数：投入产出">Linear Algebra: Input-Output / 投入产出</h3>
-        <pre><code>x = Ax + d → x = (I − A)^(−1)d
-
-x = total output vector
-A = technical coefficient matrix
-d = final demand vector
-(I − A)^(−1) = Leontief inverse matrix</code></pre>
+        <div class="math-block">
+$$\begin{aligned}
+\mathbf{x} &= A\mathbf{x} + \mathbf{d} \quad \rightarrow \quad \mathbf{x} = (I - A)^{-1}\mathbf{d} \\[4pt]
+\mathbf{x} &= \text{total output vector} \\
+A &= \text{technical coefficient matrix} \\
+\mathbf{d} &= \text{final demand vector} \\
+(I - A)^{-1} &= \text{Leontief inverse matrix}
+\end{aligned}$$
+</div>
 
         <h3 data-translate="回归分析">Regression / 回归分析</h3>
-        <pre><code>y_i = β₀ + β₁x_i + ε_i
-
-β₁ = Cov(x,y) / Var(x) = Σ(x_i−x̄)(y_i−ȳ) / Σ(x_i−x̄)²
-
-R² = 1 − (SS_res / SS_tot)  — fraction of variance explained
-Causal interpretation requires no omitted variable bias</code></pre>
+        <div class="math-block">
+$$\begin{aligned}
+y_i &= \beta_0 + \beta_1 x_i + \varepsilon_i \\[4pt]
+\beta_1 &= \frac{\text{Cov}(x,y)}{\text{Var}(x)} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2} \\[4pt]
+R^2 &= 1 - \frac{SS_\text{res}}{SS_\text{tot}} \quad \text{— fraction of variance explained} \\[4pt]
+&\text{Causal interpretation requires no omitted variable bias}
+\end{aligned}$$
+</div>
 
         <h3 data-translate="微分方程：索洛增长">Differential Equations: Solow Growth / 索洛增长</h3>
-        <pre><code>dk/dt = s·f(k) − (n + δ)·k
-
-k = capital per worker
-s = savings rate
-f(k) = production function per worker
-n = population growth rate
-δ = depreciation rate
-
-Steady state: s·f(k*) = (n + δ)·k*</code></pre>
+        <div class="math-block">
+$$\begin{aligned}
+\frac{dk}{dt} &= s \cdot f(k) - (n + \delta) \cdot k \\[4pt]
+k &= \text{capital per worker} \\
+s &= \text{savings rate} \\
+f(k) &= \text{production function per worker} \\
+n &= \text{population growth rate} \\
+\delta &= \text{depreciation rate} \\[4pt]
+\text{Steady state: } & s \cdot f(k^*) = (n + \delta) \cdot k^*
+\end{aligned}$$
+</div>
 
       </div>
     </section>
@@ -227,5 +238,18 @@ Steady state: s·f(k*) = (n + δ)·k*</code></pre>
 
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

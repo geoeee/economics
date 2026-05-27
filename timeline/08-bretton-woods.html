@@ -97,30 +97,33 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="菲利普斯曲线">Phillips Curve / 菲利普斯曲线</h3>
-        <pre><code>π = π_e − β(u − u*) + ε
+        <div class="math-block">
+$$\pi = \pi_e - \beta(u - u^*) + \varepsilon$$
 
-π = inflation
-π_e = expected inflation
-u = unemployment
-u* = natural rate (NAIRU)
+$$\pi = \text{inflation}$$
+$$\pi_e = \text{expected inflation}$$
+$$u = \text{unemployment}$$
+$$u^* = \text{natural rate (NAIRU)}$$
 
-Original (1958): stable negative relationship
-Friedman-Phelps (1968): only short-run trade-off exists
-Long run: π = π_e → u = u* (vertical curve)
+$$\text{Original (1958): stable negative relationship}$$
+$$\text{Friedman-Phelps (1968): only short-run trade-off exists}$$
+$$\text{Long run: } \pi = \pi_e \rightarrow u = u^* \text{ (vertical curve)}$$
 
-Stagflation (1970s) proved Friedman and Phelps right</code></pre>
+$$\text{Stagflation (1970s) proved Friedman and Phelps right}$$
+</div>
 
         <h3 data-translate="哈罗德-多马增长模型">Harrod-Domar Growth Model</h3>
-        <pre><code>Growth rate = s / v
+        <div class="math-block">
+$$\text{Growth rate} = \frac{s}{v}$$
 
-s = savings rate
-v = capital-output ratio (how much capital to produce $1 output)
+$$s = \text{savings rate}$$
+$$v = \text{capital-output ratio}$$
 
-Used extensively in development planning:
-"To grow at 7%, you need investment of 21% of GDP (if v = 3)"
+$$\text{Used extensively in development planning:}$$
+$$\text{"To grow at 7\%, you need investment of 21\% of GDP (if } v = 3\text{)"}$$
 
-Limitation: ignores technological progress — the actual
-driver of sustained growth (Solow model, 1956)</code></pre>
+$$\text{Limitation: ignores technological progress — the actual driver of sustained growth (Solow model, 1956)}$$
+</div>
       </div>
     </section>
 
@@ -150,5 +153,18 @@ driver of sustained growth (Solow model, 1956)</code></pre>
   </main>
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

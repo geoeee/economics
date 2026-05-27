@@ -172,26 +172,30 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="泰勒规则">Taylor Rule / 泰勒规则</h3>
-        <pre><code>i = r* + π + 0.5(π − π*) + 0.5(y − y*)
-
-i = policy rate
-r* = natural real rate
-π = current inflation
-π* = target inflation (~2%)
-y − y* = output gap
-
-Empirically describes Fed policy well until ~2008</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        i &= r^* + \pi + 0.5(\pi - \pi^*) + 0.5(y - y^*) \\[4pt]
+        i &= \text{policy rate} \\
+        r^* &= \text{natural real rate} \\
+        \pi &= \text{current inflation} \\
+        \pi^* &= \text{target inflation } (\sim 2\%) \\
+        y - y^* &= \text{output gap} \\[4pt]
+        &\text{Empirically describes Fed policy well until } \sim 2008
+        \end{aligned}$$
+        </div>
 
         <h3 data-translate="菲利普斯曲线">Phillips Curve / 菲利普斯曲线</h3>
-        <pre><code>π = π_e − β(u − u*) + supply_shocks
-
-π = inflation
-π_e = expected inflation
-u = unemployment
-u* = NAIRU (natural rate)
-β = sensitivity
-
-Inverse relationship: lower unemployment → higher inflation</code></pre>
+        <div class="math-block">
+        $$\begin{aligned}
+        \pi &= \pi_e - \beta(u - u^*) + \text{supply\_shocks} \\[4pt]
+        \pi &= \text{inflation} \\
+        \pi_e &= \text{expected inflation} \\
+        u &= \text{unemployment} \\
+        u^* &= \text{NAIRU (natural rate)} \\
+        \beta &= \text{sensitivity} \\[4pt]
+        &\text{Inverse relationship: lower unemployment } \rightarrow \text{ higher inflation}
+        \end{aligned}$$
+        </div>
       </div>
     </section>
 
@@ -224,5 +228,18 @@ Inverse relationship: lower unemployment → higher inflation</code></pre>
 
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

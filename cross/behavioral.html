@@ -165,29 +165,34 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="前景理论价值函数">Prospect Theory Value Function / 前景理论价值函数</h3>
-        <pre><code>v(x) =  x^α        if x ≥ 0  (gains)
-v(x) = −λ(−x)^β   if x < 0  (losses)
-
-Typical estimates: α ≈ β ≈ 0.88, λ ≈ 2.25
-
-Diminishing sensitivity in both directions.
-Losses weigh ~2.25× more than equal-sized gains.</code></pre>
+        <div class="math-block">
+$$v(x) = \begin{cases}
+x^\alpha & \text{if } x \geq 0 \ \text{(gains)} \\
+-\lambda(-x)^\beta & \text{if } x < 0 \ \text{(losses)}
+\end{cases} \\[4pt]
+\text{Typical estimates: } \alpha \approx \beta \approx 0.88,\ \lambda \approx 2.25 \\[4pt]
+\text{Diminishing sensitivity in both directions.} \\
+\text{Losses weigh } \sim 2.25\times \text{ more than equal-sized gains.}$$
+</div>
 
         <h3 data-translate="概率加权">Probability Weighting / 概率加权</h3>
-        <pre><code>w(p) = p^γ / (p^γ + (1−p)^γ)^(1/γ)
-
-γ ≈ 0.65: overweight small probabilities (lottery tickets, insurance)
-underweight moderate/high probabilities</code></pre>
+        <div class="math-block">
+$$w(p) = \frac{p^\gamma}{(p^\gamma + (1-p)^\gamma)^{1/\gamma}} \\[4pt]
+\gamma \approx 0.65 \text{: overweight small probabilities (lottery tickets, insurance)} \\
+\text{underweight moderate/high probabilities}$$
+</div>
 
         <h3 data-translate="双曲线贴现">Hyperbolic Discounting / 双曲线贴现</h3>
-        <pre><code>V = A / (1 + kD)
-
-A = reward amount, D = delay, k = discount factor
-Today:  $100 now vs $120 in 1 month → take $100
-Future: $100 in 12 months vs $120 in 13 months → take $120
-
-Time-inconsistent preferences: we plan to be patient tomorrow,
-but when tomorrow arrives, we're impulsive again.</code></pre>
+        <div class="math-block">
+$$V = \frac{A}{1 + kD} \\[4pt]
+A = \text{reward amount},\ D = \text{delay},\ k = \text{discount factor} \\[4pt]
+\begin{aligned}
+\text{Today: } & \$100 \text{ now vs } \$120 \text{ in 1 month} \rightarrow \text{take } \$100 \\
+\text{Future: } & \$100 \text{ in 12 months vs } \$120 \text{ in 13 months} \rightarrow \text{take } \$120
+\end{aligned} \\[4pt]
+\text{Time-inconsistent preferences: we plan to be patient tomorrow,} \\
+\text{but when tomorrow arrives, we're impulsive again.}$$
+</div>
       </div>
     </section>
 
@@ -220,5 +225,18 @@ but when tomorrow arrives, we're impulsive again.</code></pre>
 
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

@@ -98,35 +98,36 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="乘数效应">The Multiplier Effect / 乘数效应</h3>
-        <pre><code>ΔY = k × ΔG
+        <div class="math-block">
+$$\Delta Y = k \times \Delta G$$
 
-k = 1 / (1 − MPC) = 1 / MPS
+$$k = \frac{1}{1 - MPC} = \frac{1}{MPS}$$
 
-MPC = marginal propensity to consume
-MPS = marginal propensity to save
+$$\text{MPC} = \text{marginal propensity to consume}$$
+$$\text{MPS} = \text{marginal propensity to save}$$
 
-If MPC = 0.8, k = 5
-→ $1B government spending → $5B GDP increase
+$$\text{If } MPC = 0.8\text{, } k = 5$$
+$$\rightarrow \$1B \text{ government spending} \rightarrow \$5B \text{ GDP increase}$$
 
-Keynes' key insight: modest government spending
-can have outsized effects on output</code></pre>
+$$\text{Keynes' key insight: modest government spending can have outsized effects on output}$$
+</div>
 
         <h3 data-translate="流动性陷阱">Liquidity Trap / 流动性陷阱</h3>
-        <pre><code>When interest rates near zero:
-  Money demand becomes perfectly elastic
-  → more money supply doesn't lower rates
-  → monetary policy becomes impotent
+        <div class="math-block">
+$$\text{When interest rates near zero:}$$
+$$\text{Money demand becomes perfectly elastic}$$
+$$\rightarrow \text{more money supply doesn't lower rates}$$
+$$\rightarrow \text{monetary policy becomes impotent}$$
 
-Solution: fiscal policy (government spending)
-must directly create demand</code></pre>
+$$\text{Solution: fiscal policy (government spending) must directly create demand}$$
+</div>
 
         <h3 data-translate="GDP核算（在这个时代被发明）">GDP Calculation (Invented in this era)</h3>
-        <pre><code>GDP = C + I + G + (X − M)
+        <div class="math-block">
+$$GDP = C + I + G + (X - M)$$
 
-Kuznets (1934) created national income accounting
-— a measurement system that made macroeconomics
-possible. Before the 1930s, no one even knew
-how big their economy was.</code></pre>
+$$\text{Kuznets (1934) created national income accounting — a measurement system that made macroeconomics possible. Before the 1930s, no one even knew how big their economy was.}$$
+</div>
       </div>
     </section>
 
@@ -157,5 +158,18 @@ how big their economy was.</code></pre>
   </main>
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

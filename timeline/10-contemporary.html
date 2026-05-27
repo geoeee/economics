@@ -97,41 +97,42 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="皮凯蒂的 r > g">Piketty's r > g / 皮凯蒂的 r > g</h3>
-        <pre><code>If r (return on capital) > g (growth rate):
-  → capital/income ratio β = s/g rises (s = savings rate)
-  → wealth concentrates
-  → inherited wealth dominates earned income
+        <div class="math-block">
+$$\text{If } r \text{ (return on capital)} > g \text{ (growth rate):}$$
+$$\rightarrow \text{capital/income ratio } \beta = \frac{s}{g} \text{ rises } (s = \text{savings rate})$$
+$$\rightarrow \text{wealth concentrates}$$
+$$\rightarrow \text{inherited wealth dominates earned income}$$
 
-Piketty's data: r ≈ 4–5% historically
-                 g ≈ 1–2% in mature economies
-                 → r > g is the historical norm, not exception
+$$\text{Piketty's data: } r \approx 4\text{–}5\% \text{ historically}$$
+$$\quad g \approx 1\text{–}2\% \text{ in mature economies}$$
+$$\rightarrow r > g \text{ is the historical norm, not exception}$$
 
-Implication: capitalism tends naturally toward inequality
-unless interrupted by war, revolution, or policy intervention</code></pre>
+$$\text{Implication: capitalism tends naturally toward inequality unless interrupted by war, revolution, or policy intervention}$$
+</div>
 
         <h3 data-translate="现代货币理论">Modern Monetary Theory (MMT) / 现代货币理论</h3>
-        <pre><code>For a monetarily sovereign nation:
-  Government spending is NOT constrained by tax revenue
-  Real constraint: inflation, not solvency
+        <div class="math-block">
+$$\text{For a monetarily sovereign nation:}$$
+$$\text{Government spending is NOT constrained by tax revenue}$$
+$$\text{Real constraint: inflation, not solvency}$$
 
-The government can always "print" money to pay debts.
-The question is not "can we afford it?" but
-"will it cause inflation?"
+$$\text{The government can always "print" money to pay debts.}$$
+$$\text{The question is not "can we afford it?" but "will it cause inflation?"}$$
 
-Job Guarantee: government offers employment at living wage
-to anyone willing to work — automatic stabilizer + price anchor</code></pre>
+$$\text{Job Guarantee: government offers employment at living wage to anyone willing to work — automatic stabilizer + price anchor}$$
+</div>
 
         <h3 data-translate="自然利率">R-star (Natural Rate of Interest) / 自然利率</h3>
-        <pre><code>r* = the real interest rate consistent with
-     full employment and stable inflation
+        <div class="math-block">
+$$r^* = \text{the real interest rate consistent with full employment and stable inflation}$$
 
-Estimated to have fallen from ~2% (1990s) to ~0.5% (2010s)
-→ secular stagnation (Summers)
-→ "lower for longer" era for interest rates
+$$\text{Estimated to have fallen from} \sim 2\% \text{ (1990s) to} \sim 0.5\% \text{ (2010s)}$$
+$$\rightarrow \text{secular stagnation (Summers)}$$
+$$\rightarrow \text{"lower for longer" era for interest rates}$$
 
-If r* is truly near zero, central banks have very limited
-room to cut rates in the next recession
-→ the post-2022 rate hikes may be temporary</code></pre>
+$$\text{If } r^* \text{ is truly near zero, central banks have very limited room to cut rates in the next recession}$$
+$$\rightarrow \text{the post-2022 rate hikes may be temporary}$$
+</div>
       </div>
     </section>
 
@@ -163,5 +164,18 @@ room to cut rates in the next recession
   </main>
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

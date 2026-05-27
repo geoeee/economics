@@ -93,30 +93,33 @@
       <div class="discipline-header">📐 Mathematics / 数学</div>
       <div class="discipline-body">
         <h3 data-translate="瓦尔拉斯一般均衡">Walrasian General Equilibrium / 瓦尔拉斯一般均衡</h3>
-        <pre><code>n markets, n prices: p₁, p₂, ..., pₙ
-
-For each good i:
-  D_i(p₁...pₙ) = S_i(p₁...pₙ)
-
-Walras' Law: Σ p_i·D_i = Σ p_i·S_i
-  → If n−1 markets clear, the nth must too
-
-Existence of equilibrium proven by
-Arrow & Debreu (1954) using fixed-point theorem
-— but computational intractable for realistic n</code></pre>
+        <div class="math-block">
+$$\begin{aligned}
+&n\text{ markets, } n\text{ prices: } p_1, p_2, \ldots, p_n\\[4pt]
+&\text{For each good } i:\\
+&\quad D_i(p_1 \ldots p_n) = S_i(p_1 \ldots p_n)\\[4pt]
+&\text{Walras' Law: } \sum p_i \cdot D_i = \sum p_i \cdot S_i\\
+&\quad \rightarrow \text{If } n-1 \text{ markets clear, the } n\text{th must too}\\[4pt]
+&\text{Existence of equilibrium proven by}\\
+&\text{Arrow \& Debreu (1954) using fixed-point theorem}\\
+&\text{— but computationally intractable for realistic } n
+\end{aligned}$$
+</div>
 
         <h3 data-translate="马歇尔弹性">Marshallian Elasticity / 马歇尔弹性</h3>
-        <pre><code>Price Elasticity of Demand:
-  η = (ΔQ/ΔP) × (P/Q)
+        <div class="math-block">
+$$\text{Price Elasticity of Demand:}$$
+$$\eta = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q}$$
 
-|η| > 1: elastic (luxury goods)
-|η| < 1: inelastic (necessities)
+$$|\eta| > 1\text{: elastic (luxury goods)}$$
+$$|\eta| < 1\text{: inelastic (necessities)}$$
 
-Consumer Surplus = Area under demand curve above price
-Producer Surplus = Area above supply curve below price
+$$\text{Consumer Surplus} = \text{Area under demand curve above price}$$
+$$\text{Producer Surplus} = \text{Area above supply curve below price}$$
 
-Deadweight loss from taxation:
-  DWL = ½ × tax × ΔQ</code></pre>
+$$\text{Deadweight loss from taxation:}$$
+$$\text{DWL} = \frac{1}{2} \times \text{tax} \times \Delta Q$$
+</div>
       </div>
     </section>
 
@@ -145,5 +148,18 @@ Deadweight loss from taxation:
   </main>
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

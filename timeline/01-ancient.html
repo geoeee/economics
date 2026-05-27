@@ -295,14 +295,16 @@
           Their number system survives today in our 60-minute hours and 360-degree circles.
         </p>
 
-        <pre><code>Example: Grain distribution problem (Sumerian tablet, ~2000 BC)
-
-A temple has 600 sila of grain.
-200 sila → high-grade rations (×2 weight)
-? sila → standard rations (×1 weight)
-? sila → low-grade rations (×0.5 weight)
-
-Solution uses proportional reasoning in base-60.</code></pre>
+        <div class="math-block">
+$$\begin{aligned}
+&\text{Example: Grain distribution problem (Sumerian tablet, }\sim\text{2000 BC)}\\[4pt]
+&\text{A temple has 600 sila of grain.}\\
+&\text{200 sila} \rightarrow \text{high-grade rations } (\times 2\text{ weight})\\
+&\text{? sila} \rightarrow \text{standard rations } (\times 1\text{ weight})\\
+&\text{? sila} \rightarrow \text{low-grade rations } (\times 0.5\text{ weight})\\[4pt]
+&\text{Solution uses proportional reasoning in base-60.}
+\end{aligned}$$
+</div>
 
         <h3>Egyptian Geometry for Land and Tax</h3>
         <p>
@@ -430,5 +432,18 @@ Solution uses proportional reasoning in base-60.</code></pre>
 
   <script src="../assets/js/nav.js"></script>
   <script src="../assets/js/tooltip.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        scale: 0.96
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>
